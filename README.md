@@ -1,4 +1,6 @@
-This README will function as a note taking document for the moment before transitioning to a properly formatted readme as functionality develops.Initial construction will go as follows:
+This README will function as a note taking document for the moment before transitioning to a properly formatted readme as functionality develops.
+The complete sequence of business logic tests can be found [here](/tests.md).
+Initial construction will go as follows:
 
 *Build initial Pizza constructor function using TDD
 
@@ -19,3 +21,5 @@ build UI to display total price as table with breakdown
 *build in ability to add multiple pizzas to an order (will likely involve developing TDD for several functions further)
 
 *add methodology to remove pizza from order using none-other than (you guessed it!) TDD
+
+
