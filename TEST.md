@@ -1,0 +1,1 @@
+This document will serve a location for TDD psuedocode detailing production of Javascript Business Logic for this project. Further information on the function and production of this project can be found in README.md
