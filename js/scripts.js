@@ -2,6 +2,7 @@
 function Order(){
   this.pizzas = {};
   this.currentId = 0;
+  this.totalPrice = NaN;
 }
 
 Order.prototype.assignId = function() {
@@ -30,6 +31,10 @@ Order.prototype.findPizza = function(id) {
     return this.pizzas[id];
   }
 };
+
+Order.prototype.getTotalPrice = function() {
+  
+}
 
 function Pizza(toppings, sauce, cheese, size) {
   this.toppings = toppings;
