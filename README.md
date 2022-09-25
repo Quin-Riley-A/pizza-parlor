@@ -22,4 +22,5 @@ Initial construction will go as follows:
 
 * ~~*add methodology to remove pizza from order using none-other than (you guessed it!) TDD~~
 
+* investigate why when I click the text for green peppers anchovies checks and unchecks
 
