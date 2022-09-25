@@ -23,6 +23,10 @@ Order.prototype.removePizza = function(id) {
   }
 }
 
+Order.prototype.findPizza = function(id) {
+  return this.pizzas[id];
+}
+
 function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;

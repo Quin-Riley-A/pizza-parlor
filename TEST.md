@@ -97,7 +97,7 @@ order.findPizza(1);
 
 **Expected Output**
 ```javascript
-Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}
+Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium", price: NaN, id: 1}
 ```
 
 ### **Describe:** Pizza() ###
