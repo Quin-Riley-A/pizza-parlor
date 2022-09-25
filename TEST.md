@@ -62,7 +62,7 @@ console.log(pizza.price);
 ```
 
 #### **Test 3** ####
-*The price will round up to the next cent on tax lest an avalanching fraction of a cents accrue*
+*The price will round up to the next cent on tax lest an avalanching fraction of a cents accrue.*
 
 **Code:**
 ```javascript
@@ -75,3 +75,4 @@ console.log(pizza.price);
 ```javascript
 16.46
 ```
+

@@ -4,7 +4,7 @@ Initial construction will go as follows:
 
 * ~~*Build initial Pizza constructor function using TDD~~
 
-* *Build Pizza prototype methodology for deriving price using TDD
+* ~~*Build Pizza prototype methodology for deriving price using TDD~~
 
 * Build initial form and UI for user to input selected pizza
 
