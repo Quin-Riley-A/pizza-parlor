@@ -83,7 +83,22 @@ console.log(order)
 false
 Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 1}
 ```
+### **Describe:** Order.prototype.findPizza() ###
+#### **Test 1** ####
+*It will take an integer as an argument and return the pizza child object with the corresponding ID.*
 
+**Code:**
+```javascript
+let order = new Order();
+let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
+order.addPizza(pizza);
+order.findPizza(1);
+```
+
+**Expected Output**
+```javascript
+Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}
+```
 
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
