@@ -37,7 +37,7 @@ Object {toppings: ["extra cheese", "pickles", "dill"], size: "12-inch medium", p
 **Code:**
 ```javascript
 let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
-pizza.getPrice();
+pizza.getPrice(pizza);
 console.log(pizza.price);
 ```
 
