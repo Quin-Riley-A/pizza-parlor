@@ -15,8 +15,12 @@ Order.prototype.addPizza = function(pizza) {
 };
 
 Order.prototype.removePizza = function(id) {
+  if (this.pizzas[id] === undefined) {
+    return false;
+  } else {
   delete this.pizzas[id];
   return true;
+  }
 }
 
 function Pizza(toppings, size) {

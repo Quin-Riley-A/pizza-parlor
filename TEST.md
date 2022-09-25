@@ -81,7 +81,7 @@ console.log(order)
 **Expected Output**
 ```javascript
 false
-Object {toppings: ["extra cheese", "pickles", "dill"], size: "12-inch medium"}
+Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 1}
 ```
 
 
