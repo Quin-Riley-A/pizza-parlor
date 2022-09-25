@@ -46,7 +46,6 @@ console.log(pizza.price);
 11.99
 ```
 
-### **Describe:** Pizza.prototype.getPrice() ###
 #### **Test 2** ####
 *It will scale a portion of the value for toppings and add tax. Display to the hundredths place*
 
@@ -59,5 +58,20 @@ console.log(pizza.price);
 
 **Expected Output**
 ```javascript
-16.75
+16.45
+```
+
+#### **Test 3** ####
+*The price will round up to the next cent on tax lest an avalanching fraction of a cents accrue*
+
+**Code:**
+```javascript
+let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
+pizza.getPrice();
+console.log(pizza.price);
+```
+
+**Expected Output**
+```javascript
+16.46
 ```
