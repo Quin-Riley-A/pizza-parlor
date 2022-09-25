@@ -2,7 +2,7 @@
 function Order(){
   this.pizzas = {};
   this.currentId = 0;
-  this.totalPrice = NaN;
+  this.totalPrice = 0;
 }
 
 Order.prototype.assignId = function() {
@@ -33,18 +33,22 @@ Order.prototype.findPizza = function(id) {
 };
 
 Order.prototype.getTotalPrice = function() {
-
+  Object.keys(order.pizzas).forEach(function(key) {
+    const pizza = order.findPizza(key);
+    this.totalPrice += pizza.price
+  })
 }
 
 function Pizza(toppings, sauce, cheese, size) {
   this.toppings = toppings;
   this.size = size;
-  this.price = NaN;
+  this.price = 0;
   this.cheese = cheese;
   this.sauce = sauce;
 }
 
 Pizza.prototype.getPrice = function() {
+  console.log(this);
   const taxRate = 1.085;
   let basePrice = 11.99;
   let toppingCount = this.toppings.length;
@@ -73,11 +77,11 @@ function submitPizza(event) {
   let pizza = new Pizza(toppingList, pizzaSauce, pizzaCheese, pizzaSize);
   pizza.getPrice();
   order.addPizza(pizza);
+  order.getTotalPrice();
 }
 
 let order = new Order();
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
   form.addEventListener("submit", submitPizza);
-//  let chosentoppings = 0
 });
