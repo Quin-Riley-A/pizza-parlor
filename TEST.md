@@ -83,6 +83,7 @@ console.log(order)
 false
 Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 1}
 ```
+
 ### **Describe:** Order.prototype.findPizza() ###
 #### **Test 1** ####
 *It will take an integer as an argument and return the pizza child object with the corresponding ID.*
@@ -116,6 +117,7 @@ order.findPizza(2);
 false
 ```
 
+
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
 *It will return an object of the type Pizza with 2 properties. Namely an array of toppings and string for size*
@@ -143,6 +145,21 @@ console.log(pizza);
 **Expected Output**
 ```javascript
 Object {toppings: ["extra cheese", "pickles", "dill"], size: "12-inch medium", price: NaN}
+```
+
+#### **Test 3** ####
+*It will add new properties to the constructor*
+
+**Code:**
+```javascript
+let pizza = new Pizza(["sausage"], "tomato", "regular", "12-inch medium");
+console.log(pizza);
+```
+
+**Expected Output**
+```javascript
+Object {toppings: ["sausage"], sauce: tomato
+price: NaN, cheese: "regular", size: "12-inch medium"}
 ```
 
 

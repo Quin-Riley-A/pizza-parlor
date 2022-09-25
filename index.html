@@ -14,45 +14,49 @@
     <div class="row">
       <div class="col-md-8">
         <form>
+          <!-- sauce -->
           <div class="form-row">
             <div class="form-group">
               <label for="sauce">Sauce</label>
               <select class="form-control custom-select" id="sauce" required>
                 <option value="" disabled selected>Please Select a Sauce Option</option>
-                <option id="sauce1">Tomato Marinara Sauce</option>
-                <option id="sauce2">Alfredo Sauce</option>
-                <option id="sauce3">Barbecue Sauce</option>
-                <option id="sauce4">Pesto</option>
-                <option id="sauce5">No Sauce</option>
+                <option id="sauce1" value="tomato">Tomato Marinara Sauce</option>
+                <option id="sauce2" value="alfredo">Alfredo Sauce</option>
+                <option id="sauce3" value="barbecue">Barbecue Sauce</option>
+                <option id="sauce4" value="pesto">Pesto</option>
+                <option id="sauce5" value="none">No Sauce</option>
               </select>
             </div>
           </div>
+          <!-- cheese -->
           <div class="form-row">
             <div class="form-group">
               <label for="cheese">Cheese</label>
               <select class="form-control custom-select" id="cheese" required>
                 <option value="" disabled selected>Select your Cheese Option</option>
-                <option id="cheese1">Standard Allotment of Cheese</option>
-                <option id="cheese2">Extra Cheese</option>
-                <option id="cheese3">Vegan Cheese</option>
-                <option id="cheese4">No Cheese</option>
+                <option id="cheese1" value="regular">Standard Allotment of Cheese</option>
+                <option id="cheese2" value="extra">Extra Cheese</option>
+                <option id="cheese3" value="vegan">Vegan Cheese</option>
+                <option id="cheese4" value="none">No Cheese</option>
               </select>
             </div>
           </div>
           <br>
+          <!-- size -->
           <div class="form-row">
             <div class="form-group">
               <label for="size">Size</label>
               <select class="form-control custom-select" id="size" required>
                 <option value="" disabled selected>Select the Size of your Pizza</option>
                 <option id="size1" value="9-inch small">Small 9"</option>
-                <option id="12-inch medium">Medium 12"</option>
+                <option id="size2" value="12-inch medium">Medium 12"</option>
                 <option id="size3" value="16-inch large">Large 16"</option>
                 <option id="size4" value="20-inch xl">XL 20"</option>
               </select>
             </div>
           </div>
           <br>
+          <!-- toppings -->
           <div class="form-row">
             <div class="form-check col-sm-6">
               <h5>Meat Toppings</h5>
@@ -126,10 +130,14 @@
             </div>
           </div>
           <br>
+          <!-- button -->
           <div class="form-row">
             <button type="submit" class="btn btn-secondary" id="submit-pizza">Submit</button>
           </div>
         </form>
+      </div>
+      <div class="col-md-4" id="order">
+
       </div>
     </div>
   </div>

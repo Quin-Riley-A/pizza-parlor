@@ -31,10 +31,12 @@ Order.prototype.findPizza = function(id) {
   }
 };
 
-function Pizza(toppings, size) {
+function Pizza(toppings, sauce, cheese, size) {
   this.toppings = toppings;
   this.size = size;
   this.price = NaN;
+  this.cheese = cheese;
+  this.sauce = sauce;
 }
 
 Pizza.prototype.getPrice = function() {
@@ -55,7 +57,15 @@ function submitPizza(event) {
   for (let n = 0; n < userToppings.length; n++) {
     toppingList.push(userToppings[n].value);
   }
-  let pizza = new Pizza(toppingList, "medium");
+  let sauceSelected = document.getElementById('sauce');
+  let cheeseSelected = document.getElementById('cheese');
+  let sizeSelected = document.getElementById('size');
+  let pizzaSauce = sauceSelected.options[sauceSelected.selectedIndex].value;
+  console.log(pizzaSauce);
+  let pizzaCheese = cheeseSelected.options[cheeseSelected.selectedIndex].value;
+  console.log(pizzaCheese);
+  let pizzaSize = sizeSelected.options[sizeSelected.selectedIndex].value;
+  let pizza = new Pizza(toppingList, pizzaSauce, pizzaCheese, pizzaSize);
   order.addPizza(pizza);
 }
 
