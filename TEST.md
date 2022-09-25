@@ -2,7 +2,7 @@ This document will serve a location for TDD psuedocode detailing production of J
 
 ### **Describe:** Order() ###
 #### **Test 1** ####
-*It will return an object of the type Order with 2 properties. Namely an empty set of pizza objects and an ID numerator starting at 0.*
+*It will return an object of the type Order with 2 properties. Namely an empty set of pizza objects and an ID numerator starting at 1.*
 
 **Code:**
 ```javascript
@@ -12,7 +12,7 @@ console.log(order);
 
 **Expected Output**
 ```javascript
-Object {pizzas: {}, currentId: 0}
+Object {pizzas: {}, currentId: 1}
 ```
 
 ### **Describe:** Order.prototype.assignId() ###
@@ -44,7 +44,7 @@ console.log(order);
 
 **Expected Output**
 ```javascript
-Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 0}
+Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 1}
 ```
 
 ### **Describe:** Pizza() ###
