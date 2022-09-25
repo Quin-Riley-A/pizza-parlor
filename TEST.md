@@ -66,6 +66,25 @@ true
 Object {pizzas: Object {}, currentId: 1}
 ```
 
+#### **Test 2** ####
+*It will return false if a provided order ID number is not assigned to an existing pizza*
+
+**Code:**
+```javascript
+let order = new Order();
+let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
+order.addPizza(pizza);
+order.removePizza(2);
+console.log(order)
+```
+
+**Expected Output**
+```javascript
+false
+Object {toppings: ["extra cheese", "pickles", "dill"], size: "12-inch medium"}
+```
+
+
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
 *It will return an object of the type Pizza with 2 properties. Namely an array of toppings and string for size*
