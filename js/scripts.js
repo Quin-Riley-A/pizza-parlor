@@ -93,14 +93,17 @@ function submitPizza(event) {
   let cheeseSelected = document.getElementById('cheese');
   let sizeSelected = document.getElementById('size');
   let pizzaSauce = sauceSelected.options[sauceSelected.selectedIndex].value;
-  console.log(pizzaSauce);
   let pizzaCheese = cheeseSelected.options[cheeseSelected.selectedIndex].value;
-  console.log(pizzaCheese);
   let pizzaSize = sizeSelected.options[sizeSelected.selectedIndex].value;
   let pizza = new Pizza(toppingList, pizzaSauce, pizzaCheese, pizzaSize);
   pizza.getPrice();
   order.addPizza(pizza);
   order.getTotalPrice();
+  displayOrder(order);
+}
+
+function displayOrder(order) {
+  let orderDisplay = document.querySelector("div#order");
 }
 
 let order = new Order();
