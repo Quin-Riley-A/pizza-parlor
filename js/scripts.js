@@ -1,7 +1,7 @@
 //Business Logic
 function Order(){
   this.pizzas = {};
-  this.currentId = 1;
+  this.currentId = 0;
 }
 
 function Pizza(toppings, size) {
@@ -21,7 +21,6 @@ Pizza.prototype.getPrice = function() {
 
 
 //UI Logic
-
 function submitPizza(event) {
   event.preventDefault();
   let userToppings = this.querySelectorAll('input[type="checkbox"]:checked');
@@ -32,6 +31,7 @@ function submitPizza(event) {
   console.log(toppingList);
 }
 
+let order = new Order();
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
   form.addEventListener("submit", submitPizza);

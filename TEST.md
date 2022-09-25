@@ -2,7 +2,7 @@ This document will serve a location for TDD psuedocode detailing production of J
 
 ### **Describe:** Order() ###
 #### **Test 1** ####
-*It will return an object of the type Order with 2 properties. Namely an empty set of pizza objects and an ID numerator starting at 1.*
+*It will return an object of the type Order with 2 properties. Namely an empty set of pizza objects and an ID numerator starting at 0.*
 
 **Code:**
 ```javascript
