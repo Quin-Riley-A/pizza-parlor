@@ -37,7 +37,7 @@ Object {toppings: ["extra cheese", "pickles", "dill"], size: "12-inch medium", p
 **Code:**
 ```javascript
 let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
-pizza.getPrice(pizza);
+pizza.getPrice();
 console.log(pizza.price);
 ```
 
@@ -46,3 +46,18 @@ console.log(pizza.price);
 11.99
 ```
 
+### **Describe:** Pizza.prototype.getPrice() ###
+#### **Test 2** ####
+*It will scale a portion of the value for toppings and add tax.*
+
+**Code:**
+```javascript
+let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
+pizza.getPrice();
+console.log(pizza.price);
+```
+
+**Expected Output**
+```javascript
+16.7524
+```
