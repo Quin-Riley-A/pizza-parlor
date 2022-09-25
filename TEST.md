@@ -30,6 +30,23 @@ order.assignId;
 0
 ```
 
+### **Describe:** Order.prototype.addPizza() ###
+#### **Test 1** ####
+*It will take a Pizza object as an argument and add it to an existing order object*
+
+**Code:**
+```javascript
+let order = new Order();
+let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
+order.addPizza(pizza);
+console.log(order);
+```
+
+**Expected Output**
+```javascript
+Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 0}
+```
+
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
 *It will return an object of the type Pizza with 2 properties. Namely an array of toppings and string for size*

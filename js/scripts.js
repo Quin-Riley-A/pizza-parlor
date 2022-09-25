@@ -9,6 +9,10 @@ Order.prototype.assignId = function() {
   return this.currentId;
 };
 
+Order.prototype.addPizza = function(pizza) {
+
+};
+
 function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;
