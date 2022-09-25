@@ -57,12 +57,12 @@ let order = new Order();
 let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
 order.addPizza(pizza);
 order.removePizza(1);
-console.log(pizza)
+console.log(order)
 ```
 
 **Expected Output**
 ```javascript
-Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 1}
+Object {pizzas: Object {}, currentId: 2}
 ```
 
 ### **Describe:** Pizza() ###
