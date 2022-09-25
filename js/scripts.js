@@ -21,7 +21,7 @@ Order.prototype.removePizza = function(id) {
   delete this.pizzas[id];
   return true;
   }
-}
+}; 
 
 Order.prototype.findPizza = function(id) {
   if (this.pizzas[id] === undefined) {
@@ -29,7 +29,7 @@ Order.prototype.findPizza = function(id) {
   } else {
     return this.pizzas[id];
   }
-}
+};
 
 function Pizza(toppings, size) {
   this.toppings = toppings;
@@ -43,7 +43,7 @@ Pizza.prototype.getPrice = function() {
   let toppingCount = this.toppings.length;
   let taxPrice = (Math.ceil(100*(basePrice * (taxRate - 1))))/100;
   this.price = basePrice + toppingCount*1.15 + taxPrice;
-}
+};
 
 
 
@@ -55,7 +55,8 @@ function submitPizza(event) {
   for (let n = 0; n < userToppings.length; n++) {
     toppingList.push(userToppings[n].value);
   }
-  console.log(toppingList);
+  let pizza = new Pizza(toppingList, "medium");
+  order.addPizza(pizza);
 }
 
 let order = new Order();
