@@ -14,6 +14,11 @@ Order.prototype.addPizza = function(pizza) {
   this.pizzas[pizza.id] = pizza;
 };
 
+Order.prototype.removePizza = function(id) {
+  delete this.pizzas[id];
+  return true;
+}
+
 function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;

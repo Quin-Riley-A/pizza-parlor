@@ -62,7 +62,8 @@ console.log(order)
 
 **Expected Output**
 ```javascript
-Object {pizzas: Object {}, currentId: 2}
+true
+Object {pizzas: Object {}, currentId: 1}
 ```
 
 ### **Describe:** Pizza() ###
