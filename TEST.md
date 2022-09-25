@@ -32,7 +32,7 @@ Object {toppings: ["extra cheese", "pickles", "dill"], size: "12-inch medium", p
 
 ### **Describe:** Pizza.prototype.getPrice() ###
 #### **Test 1** ####
-*It will assign an integer value to the price key in the targetted pizza object*
+*It will assign an floating point value to the price key in the targetted pizza object*
 
 **Code:**
 ```javascript
@@ -43,6 +43,6 @@ console.log(pizza.price);
 
 **Expected Output**
 ```javascript
-
+11.99
 ```
 
