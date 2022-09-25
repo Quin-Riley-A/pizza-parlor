@@ -1,3 +1,25 @@
+//Utility Logic
+function basePriceBySize(pizzaSize) {
+  let basePrice = NaN;
+  switch (pizzaSize) {
+    case '9-inch small':
+      basePrice = 8.99;
+      break;
+    case '12-inch medium':
+      basePrice = 10.99;
+      break;
+    case '16-inch large':
+      basePrice = 13.99;
+      break;
+    case '20-inch xl':
+      basePrice = 17.99;
+      break;
+    default:
+      console.log("An error has occured while determining the price of a pizza. Perhaps the size value contains an error. Please send any log or user input information to the developer");
+  }
+  return basePrice;
+}
+
 //Business Logic
 function Order(){
   this.pizzas = {};
@@ -51,7 +73,7 @@ function Pizza(toppings, sauce, cheese, size) {
 Pizza.prototype.getPrice = function() {
   console.log(this);
   const taxRate = 1.085;
-  let basePrice = 11.99;
+  let basePrice = basePriceBySize(this.size);
   let toppingCount = this.toppings.length;
   let taxPrice = (Math.ceil(100*(basePrice * (taxRate - 1))))/100;
   this.price = basePrice + toppingCount*1.15 + taxPrice;

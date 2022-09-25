@@ -8,7 +8,7 @@ Initial construction will go as follows:
 
 * ~~Build initial form and UI for user to input selected pizza~~
 
-* link form to backend logic so user can successfully generate one pizza object
+* ~~link form to backend logic so user can successfully generate one pizza object~~
 
 * build UI to display total price as table with breakdown
 
@@ -18,7 +18,7 @@ Initial construction will go as follows:
 
 * ~~*build method to find a specific pizza and return its ID using TDD~~
 
-* *build in ability to add multiple pizzas to an order (will likely involve developing TDD for several functions further)
+* ~~*build in ability to add multiple pizzas to an order (will likely involve developing TDD for several functions further)~~
 
 * ~~*add methodology to remove pizza from order using none-other than (you guessed it!) TDD~~
 

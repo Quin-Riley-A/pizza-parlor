@@ -192,7 +192,7 @@ console.log(pizza);
 **Expected Output**
 ```javascript
 Object {toppings: ["sausage"], sauce: tomato
-price: NaN, cheese: "regular", size: "12-inch medium"}
+price: 0, cheese: "regular", size: "12-inch medium"}
 ```
 
 
@@ -240,5 +240,20 @@ console.log(pizza.price);
 **Expected Output**
 ```javascript
 16.46
+```
+
+#### **Test 4** ####
+*The price scale the price of the pizza with its size as well as its toppings*
+
+**Code:**
+```javascript
+let pizza = new Pizza(["sausage"], "tomato", "regular", "9-inch small");
+pizza.getPrice();
+console.log(pizza.price);
+```
+
+**Expected Output**
+```javascript
+10.91
 ```
 
