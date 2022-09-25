@@ -104,6 +104,47 @@ function submitPizza(event) {
 
 function displayOrder(order) {
   let orderDisplay = document.querySelector("div#order");
+  orderDisplay.innerText = null;
+  let pizzaCount = 1;
+  Object.keys(order.pizzas).forEach(function(key) {
+    const h4 = document.createElement("h4");
+    h4.append("Pizza #" + pizzaCount);
+    pizzaCount += 1;
+    const pToppings = document.createElement("p");
+    pToppings.append("Toppings: ")
+    const pSauce = document.createElement("p");
+    const pCheese = document.createElement("p");
+    const pPrice = document.createElement("p");
+    const ol = document.createElement("ol");
+    const pizza = order.findPizza(key);
+    (pizza.toppings).forEach( function(element){
+      const liPizzaToppings = document.createElement("li");
+      liPizzaToppings.append(element);
+      ol.append(liPizzaToppings);
+    });
+    pSauce.append("Sauce: " + pizza.sauce);
+    pCheese.append("Cheese: " + pizza.cheese);
+    pPrice.append("Unit Price: $" + pizza.price);
+    orderDisplay.append(h4);
+    orderDisplay.append(pToppings);
+    orderDisplay.append(ol);
+    orderDisplay.append(pSauce, pCheese, pPrice);
+  })
+  let taxTotal = calcTax();
+  const h5Subtotal = document.createElement("h5");
+  h5Subtotal.innerText = "Subtotal: $" + parseFloat(order.totalPrice - taxTotal);
+  const h5Tax = document.createElement("h5");
+  h5Tax.innerText = "Tax: $" + taxTotal;
+  const h5OrderTotal = document.createElement("h5");
+  h5OrderTotal.innerText = "Total: $" + order.totalPrice;
+  orderDisplay.append(h5Subtotal, h5Tax, h5OrderTotal)
+}
+
+function calcTax() {
+  const taxRate = 1.085;
+  let taxAmount = (((order.totalPrice)/taxRate)*(taxRate-1));
+  taxAmount = (Math.ceil(100*taxAmount))/100;
+  return taxAmount;
 }
 
 let order = new Order();
