@@ -33,10 +33,11 @@ Order.prototype.findPizza = function(id) {
 };
 
 Order.prototype.getTotalPrice = function() {
+  order.totalPrice = 0;
   Object.keys(order.pizzas).forEach(function(key) {
     const pizza = order.findPizza(key);
-    this.totalPrice += pizza.price
-  })
+    order.totalPrice += pizza.price;
+  });
 }
 
 function Pizza(toppings, sauce, cheese, size) {
