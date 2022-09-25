@@ -15,6 +15,21 @@ console.log(order);
 Object {pizzas: {}, currentId: 1}
 ```
 
+#### **Test 2** ####
+*It will return a similar object with an additional property, totalprice initially set to NaN*
+
+**Code:**
+```javascript
+let order = new Order();
+console.log(order);
+```
+
+**Expected Output**
+```javascript
+Object {pizzas: {}, currentId: 1, totalprice: NaN}
+```
+
+
 ### **Describe:** Order.prototype.assignId() ###
 #### **Test 1** ####
 *It will return an integer that increments up from 1*
