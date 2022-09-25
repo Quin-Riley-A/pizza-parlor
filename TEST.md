@@ -15,6 +15,21 @@ console.log(order);
 Object {pizzas: {}, currentId: 0}
 ```
 
+### **Describe:** Order.prototype.assignId() ###
+#### **Test 1** ####
+*It will return an integer that increments up from 1*
+
+**Code:**
+```javascript
+let order = new Order();
+order.assignId;
+```
+
+**Expected Output**
+```javascript
+0
+```
+
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
 *It will return an object of the type Pizza with 2 properties. Namely an array of toppings and string for size*
