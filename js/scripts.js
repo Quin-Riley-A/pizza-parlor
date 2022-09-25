@@ -33,7 +33,7 @@ Order.prototype.findPizza = function(id) {
 };
 
 Order.prototype.getTotalPrice = function() {
-  
+
 }
 
 function Pizza(toppings, sauce, cheese, size) {
@@ -71,6 +71,7 @@ function submitPizza(event) {
   console.log(pizzaCheese);
   let pizzaSize = sizeSelected.options[sizeSelected.selectedIndex].value;
   let pizza = new Pizza(toppingList, pizzaSauce, pizzaCheese, pizzaSize);
+  pizza.getPrice();
   order.addPizza(pizza);
 }
 

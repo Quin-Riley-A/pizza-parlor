@@ -132,6 +132,24 @@ order.findPizza(2);
 false
 ```
 
+### **Describe:** Order.prototype.getTotalPrice() ###
+#### **Test 1** ####
+*It assigns a totalPrice value within the order object*
+
+**Code:**
+```javascript
+let order = new Order();
+let pizza = new Pizza(["sausage"], "tomato", "regular", "12-inch medium");
+pizza.getPrice();
+order.addPizza(pizza);
+order.getTotalPrice();
+order.totalPrice;
+```
+
+**Expected Output**
+```javascript
+14.16
+```
 
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
