@@ -1,5 +1,20 @@
 This document will serve a location for TDD psuedocode detailing production of Javascript Business Logic for this project. Further information on the function and production of this project can be found in README.md
 
+### **Describe:** Order() ###
+#### **Test 1** ####
+*It will return an object of the type Order with 2 properties. Namely an empty set of pizza objects and an ID numerator starting at 1.*
+
+**Code:**
+```javascript
+let order = new Order();
+console.log(order);
+```
+
+**Expected Output**
+```javascript
+Object {pizzas: {}, currentId: 0}
+```
+
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
 *It will return an object of the type Pizza with 2 properties. Namely an array of toppings and string for size*
