@@ -4,6 +4,11 @@ function Order(){
   this.currentId = 0;
 }
 
+Order.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
+};
+
 function Pizza(toppings, size) {
   this.toppings = toppings;
   this.size = size;
