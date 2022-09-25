@@ -47,6 +47,24 @@ console.log(order);
 Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 1}
 ```
 
+### **Describe:** Order.prototype.removePizza() ###
+#### **Test 1** ####
+*It will remove a selected pizza from the parent order object*
+
+**Code:**
+```javascript
+let order = new Order();
+let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
+order.addPizza(pizza);
+order.removePizza(1);
+console.log(pizza)
+```
+
+**Expected Output**
+```javascript
+Object {pizzas: Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium"}, currentId: 1}
+```
+
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
 *It will return an object of the type Pizza with 2 properties. Namely an array of toppings and string for size*
