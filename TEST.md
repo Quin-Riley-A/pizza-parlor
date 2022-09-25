@@ -100,6 +100,22 @@ order.findPizza(1);
 Object {toppings: ["extra cheese", "pickles", "dill"], , size: "12-inch medium", price: NaN, id: 1}
 ```
 
+#### **Test 2** ####
+*It will return false if the id argument does not correspond to an existing ID for an instantiated pizza object.*
+
+**Code:**
+```javascript
+let order = new Order();
+let pizza = new Pizza(["extra cheese", "pickles", "dill"], "12-inch medium");
+order.addPizza(pizza);
+order.findPizza(2);
+```
+
+**Expected Output**
+```javascript
+false
+```
+
 ### **Describe:** Pizza() ###
 #### **Test 1** ####
 *It will return an object of the type Pizza with 2 properties. Namely an array of toppings and string for size*
