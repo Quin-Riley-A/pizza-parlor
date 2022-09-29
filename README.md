@@ -7,7 +7,7 @@ Quin Asselin, (2022)
 
 ## Table of Contents
 1. [Repository Description](#description)
-2. [Technologies Used](#tech)
+2. [Technologies Used]
 3. [Setup Instructions](#setup)
 4. [Example Tests](#tests)
 5. [Known Bugs](#bugs)
