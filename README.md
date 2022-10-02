@@ -12,7 +12,6 @@ Quin Asselin, (2022)
 4. [Example Tests](#tests)
 5. [Known Bugs](#bugs)
 6. [License Information](#license)
-7. [Photo Licensure](#photo)
 
 *** 
 
@@ -58,12 +57,15 @@ Testing information including pseudocode TDD for functions of business logic can
 
 Tests are organized by function and range by expected complexity of implementation (least to most).
 
-The complete sequence of business logic tests can be found [here](/tests.md).
+The complete sequence of business logic tests can be found [here](TEST.md).
 ***
 
 ### Known Bugs
+This webpage may experience some issues when it comes to siing the page relative to your devices width. If you find the formatting of the page becomes unreadable, please try to adjust your webpage to a wider format.
 
 If you experience this issue, please message the producer of your current repository and include any relevant form/page information. Thank you for your patience as I work on any issues!
+
+Additionally, the current iteration of the webpage does not include front end functionality to remove a pizza via the GUI. This along with the rudimentary state of the GUI will be addressed in the next series of updates.
 ***
 
 ### License Information
